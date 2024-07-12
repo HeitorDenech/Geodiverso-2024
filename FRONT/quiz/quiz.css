@@ -1,0 +1,309 @@
+@media screen and (max-width:2280px) {
+  
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ /* width */
+ ::-webkit-scrollbar {
+  width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+  background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background: gray;
+      }
+  
+  ::-webkit-scrollbar-thumb:hover {
+  background: #e21a41;
+  }
+
+body {
+  background-color: white;
+  color: #fff;
+}
+
+header {
+  height: 200px;
+  background: #131111;
+  padding: 30px 1%;
+  /* background-image: linear-gradient(90deg,transparent,transparent 50%,#414143 calc(50% + 1.5px),transparent calc(50% + 1.5px)); */
+}
+
+.interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#logo {
+  height: 115px;
+  width: 115px;
+  transition: all .55s ease;
+}
+
+#logo:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#item-navbar {
+  max-width: 1280px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 2s ease;
+}
+
+#item-navbar:hover {
+  text-decoration: none;
+  background: linear-gradient(90deg, #e21a41 60%, transparent 0) left 1rem bottom/220% 100%;
+  box-shadow: none;
+}
+
+#item-navbar-jogos {
+  max-width: 1280px;
+  font-size: 20px;
+  color: #E21A41;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 2s ease;
+}
+
+#item-navbar-jogos:hover {
+  text-decoration: none;
+  box-shadow: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+
+/* -----------------main-------------------- */
+
+button {
+  cursor: pointer;
+}
+
+main{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.container {
+  color: black;
+  background-color: white;
+  width: 90%;
+  max-width: 800px;
+
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.question {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.answers-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.next-question {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+
+  transition: filter 0.1s;
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+/* Finish game */
+.final-message {
+  font-size: 20px;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+}
+
+/* General styles */
+.hide {
+  display: none;
+}
+
+.correct .container{
+  background-color: #049b48;
+  transition: all 1s ease;
+}
+
+.incorrect .container{
+  background-color: #a10101;
+  transition: all 1s ease;
+}
+
+/* ----------------footer------------------ */
+
+
+.footer-container-1{
+  margin-top: 100px;
+  height: 254px;
+  width: 100%;
+  background-color: #131111;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-container-1 img{
+  height: 115px;
+  width: 115px;
+  transition: all .55s ease;
+}
+
+.footer-container-1 img:hover{
+  transform: scale(1.1);
+}
+
+.footer-container-1 p{
+  color: white;
+  font-size: 22px;
+}
+
+.icons{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 30px;
+}
+
+#instagram{
+  transition: all .55s ease;
+}
+
+#instagram:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#github{
+  transition: all .55s ease;
+}
+
+#github:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#twitter{
+  transition: all .55s ease;
+}
+
+#twitter:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.linha-footer{
+  height: 1px;
+  width: 100%;
+  background-color: white;
+}
+
+.footer-container-2{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  width: 100%;
+  background-color: #131111;
+}
+
+.footer-container-2 button{
+  height: 40px;
+  width: 240px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  transition: all .55s ease;
+  cursor: pointer;
+}
+
+#botao-footer-1{
+  transition: all .55s ease;
+}
+
+#botao-footer-1:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px #e21a41;
+}
+
+#botao-footer-2{
+  transition: all .55s ease;
+}
+
+#botao-footer-2:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px #e21a41;
+}
+}

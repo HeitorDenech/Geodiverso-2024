@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../img/logo-geodiverso.png" type="image/x-icon">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <header>
+        <nav class="interface">
+            <div>
+                <a href="../home/home.html">
+                    <img id="logo" src="../img/logo-geodiverso.png" alt="">
+                </a>
+            </div>
+
+            <div class="links">
+                <ul class="nav-itens">
+                   <li><a href="#" id="item-navbar">Conteúdos</a></li>
+                   <li><a href="../mapas/mapas.html" id="item-navbar">Mapas</a></li>
+                   <li><a href="../curiosidades/curiosidades.html" id="item-navbar">Curiosidades</a></li>
+                   <li><a href="../jogos/jogos.html" id="item-navbar">Jogos</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+      <div class="container">
+    
+        <div class="questions-container hide">
+          <span class="question">Pergunta aqui?</span>
+          <div class="answers-container">
+            <button class="answer button">Resposta 1</button>
+            <button class="answer button">Resposta 2</button>
+            <button class="answer button">Resposta 3</button>
+            <button class="answer button">Resposta 4</button>
+          </div>
+        </div>
+    
+        <div class="controls-container">
+          <button class="start-quiz button">Iniciar Quiz Brasil!</button>
+          <button class="next-question button hide">Próxima pergunta <i class="bi bi-arrow-right"></i></button>
+        </div>
+    
+      </div>
+  
+    </main>
+
+    <footer>
+        <section class="footer-container-1">
+            <div>
+                <a href="#logo"> <img src="../img/logo-geodiverso.png"></a>
+            </div>
+            <p>2024 - Geodiverso</p>
+            <div class="icons">
+                <i id="instagram" class="bi bi-instagram"></i>
+                <i id="github" class="bi bi-github"></i>
+                <i id="twitter" class="bi bi-twitter"></i>
+            </div>
+        </section>
+        <!-- <div class="linha-footer"></div> -->
+        <!-- <section class="footer-container-2">
+            <button id="botao-footer-1">Fale conosco</button>
+            <button id="botao-footer-2">Reporte um problema</button>
+        </section> -->
+    </footer>
+
+    <script defer src="https://unpkg.com/scrollreveal"></script>
+
+    <script defer src="quiz.js"></script>
+</body>
+</html>
