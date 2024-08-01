@@ -5,7 +5,7 @@ const sr = ScrollReveal ({
     reset: true
 })
 
-// sr.reveal('.interface', {delay:100, origin: 'top'});
+sr.reveal('.interface', {delay:100, origin: 'top'});
 
 sr.reveal('.txt-topo-site', {delay:100, origin: 'left'});
 

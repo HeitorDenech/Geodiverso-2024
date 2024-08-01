@@ -6,6 +6,7 @@ async function login(request, response) {
     const query = "SELECT email, password FROM users WHERE email = ?";
  
     connection.query(query, email, (err, results) => {
+        console.log(err, results)
         if(results.length > 0) {
             const password = request.body.password;
             const passwordQuery = results[0].password;
@@ -31,7 +32,7 @@ async function login(request, response) {
                 .status(400)
                 .json({
                     success: false,
-                    message: "Sem sucesso!",
+                    message: "Email não encontrado!",
                     data: err
                 })
         }

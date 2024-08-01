@@ -55,8 +55,8 @@
 
     .login img{
         margin-top: 20px;
-        height: 140px;
-        width: 150px;
+        height: 150px;
+        width: 160px;
         position: relative;
         animation: flutuar 2s ease-in-out infinite alternate;
     }

@@ -1,23 +1,30 @@
-// const sr = ScrollReveal ({
-//     distance: '65px',
-//     duration: 2600,
-//     delay: 450,
-//     reset: true
-// })
-
-// sr.reveal('.interface', {delay:100, origin: 'top'});
-
-// sr.reveal('.txt-topo-site', {delay:100, origin: 'left'});
-
-// sr.reveal('.carrosel', {delay:100, origin: 'right'});
-
-// sr.reveal('#h1-login', {delay:100, origin: 'top'});
-
-// sr.reveal('#input-email', {delay:100, origin: 'top'});
-
-// sr.reveal('#input-senha', {delay:100, origin: 'top'});
-
-// sr.reveal('.login-botao', {delay:100, origin: 'top'});
-
-// sr.reveal('#text-criar-conta', {delay:100, origin: 'top'});
-
+async function handleSubmit(event) {
+    event.preventDefault();
+ 
+    const email    = document.getElementById('input-email').value;
+    const password = document.getElementById('input-senha').value;
+ 
+    const data = {email, password};
+    console.log(data)
+ 
+    const response = await fetch('http://localhost:3005/api/login', {
+        method: "POST",
+        headers: {
+            'Content-Type':'application/json'
+        },
+        body: JSON.stringify(data)
+    });
+ 
+    const result = await response.json();
+ 
+    if(result.success) {
+        console.log(result.data);
+        window.location.href = "../../../FRONT/home/home.html";
+       
+    } else {
+        Swal.fire({
+            icon: "error",
+            text: result.message,
+          });
+    }
+}

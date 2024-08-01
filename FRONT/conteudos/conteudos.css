@@ -68,7 +68,7 @@
         box-shadow: none;
     }
 
-    #item-navbar-curiosidades {
+    #item-navbar-conteudos {
         max-width: 1280px;
         font-size: 20px;
         color: #E21A41;
@@ -249,7 +249,7 @@
 /* 
     ----------------curiosidades----------------------- */
 
-    .curiosidades{
+    .conteudos{
         margin-top: 50px;
         display: flex;
         align-items: center;
@@ -257,7 +257,7 @@
         background: transparent;
     }
 
-    .container-curiosidades-principal{
+    .container-conteudos-principal{
         width: 951px;
         padding: 20px;
         border: 1px solid black;
@@ -267,92 +267,7 @@
         flex-wrap: wrap;
     }
     
-    .accordion{
-        min-height: 100vh;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .accordion a{
-        color: #E21A41;
-        transition: all .55s ease-in-out;
-    }
-
-    .accordion a:hover{
-        color: black;
-        text-decoration: none;
-    }
-
-    #li{
-        text-decoration: none;
-        overflow: hidden;
-    }
-
-    .content{
-        max-width: 900px;
-        margin-top: 2rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid black;
-        cursor: pointer;
-    }
-
-    .question{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 10px;
-        color: #e21a41;
-    }
-
-    svg{
-        margin-left: 500px;
-        font-size: 30px;
-    }
-
-    .question h3{
-        font-size: 18px;
-        width: 300px;
-        display: flex;
-    }
-
-    .answer{
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 1s ease;
-    }
     
-    .answer p{
-        line-height: 1.6;
-        font-size: 16px;
-        padding: 5px 5px;
-    }
-
-    .content.active .answer{
-        max-height: 300px;
-        animation: fade 1s ease-in-out;
-    }
-
-    .content.active svg{
-        transform: rotate(180deg);
-    }
-
-    svg{
-        transition: transform 0.5s ease-in;
-    }
-
-    @keyframes fade {
-        from{
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-        to{
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
 
     /* ------------------footer------------------ */
 
