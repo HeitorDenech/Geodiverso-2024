@@ -1,386 +1,385 @@
 @media screen and (max-width:2280px) {
-  
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    
-    html {
-      scroll-behavior: smooth;
-    }
-    
-     /* width */
-     ::-webkit-scrollbar {
-      width: 10px;
-      }
-      
-      /* Track */
-      ::-webkit-scrollbar-track {
-      background: black;
-      }
-      
-      ::-webkit-scrollbar-thumb {
-          background: gray;
-          }
-      
-      ::-webkit-scrollbar-thumb:hover {
-      background: #e21a41;
-      }
-    
-    body {
-      background-color: white;
-      color: #fff;
-    }
-    
-    header {
-      height: 200px;
-      background: #131111;
-      padding: 30px 1%;
-      /* background-image: linear-gradient(90deg,transparent,transparent 50%,#414143 calc(50% + 1.5px),transparent calc(50% + 1.5px)); */
-    }
-    
-    .interface {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-    
-    #logo {
-      height: 115px;
-      width: 115px;
-      transition: all .55s ease;
-    }
-    
-    #logo:hover {
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-    
-    #item-navbar {
-      max-width: 1280px;
-      font-size: 20px;
-      color: white;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 2s ease;
-    }
-    
-    #item-navbar:hover {
-      text-decoration: none;
-      background: linear-gradient(90deg, #e21a41 60%, transparent 0) left 1rem bottom/220% 100%;
-      box-shadow: none;
-    }
-    
-    #item-navbar-jogos {
-      max-width: 1280px;
-      font-size: 20px;
-      color: #E21A41;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 2s ease;
-    }
-    
-    #item-navbar-jogos:hover {
-      text-decoration: none;
-      box-shadow: none;
-    }
-    
-    header nav ul li {
-      display: inline-block;
-      padding: 0 20px;
-    }
-    
-    
-    /* -----------------caça-palavras-------------------- */
-    
-    main{
-        margin-top: 50px;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-    }
 
-    .row{
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        max-width: 1200px;
-        width: 100%;
-      }
-      
-      .row.row-space-evenly{
-        justify-content: space-evenly;
-      }
-      
-      .box{
-        display: flex;
-        flex-direction: column;
-        border: 2px solid #ccc;
-        width: fit-content;
-        padding: 10px 20px;
-        margin: 10px 0;
-        border-radius: 5px;
-      }
-      
-      .box-3{
-        width: calc(3*100%/12);
-      }
-      
-      .box-4{
-        width: calc(4*100%/12);
-      }
-      
-      .box-6{
-        width: calc(6*100%/12);
-      }
-      
-      .box-8{
-        width: calc(8*100%/12);
-      }
-      
-      .box-12{
-        width: calc(12*100%/12);
-      }
-      
-      .form-titulo{
-        font-weight: bold;
-        font-size: 14pt;
-        text-align: center;
-        color: black;
-      }
-      
-      .form-group{
-        display: flex;
-        flex-direction: column;
-        margin: 15px 0;
-      }
-      
-      .form-group>label{
-        font-size: 9pt;
-      }
-      
-      .input{
-        border: 1px solid transparent;
-        border-bottom-color: #ccc;
-        outline-style: none;
-        padding: 3px;
-      }
-      
-      .btn {
-        border: 1px solid #ccc;
-        width: fit-content;
-        padding: 5px 10px;
-        cursor: pointer;
-      }
-      
-      .btn:hover{
-        background-color: #eee;
-      }
-      
-      .mensagem-erro{
-        display: none;
-        width: 100%;
-        box-sizing: border-box;
-        background-color: #eba2a2;
-        color: #a91c1c;
-        padding: 5px 10px;
-        border: 1px solid #a91c1c;
-        border-left-width: 5px;
-        margin-top: 5px;
-        font-size: 10pt;
-        border-radius: 3px;
-      }
-      
-      .mensagem-erro.active{
-        display: block;
-      }
-      
-      .grid-caca-palavras{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-        border: 2px solid #ccc;
-        background-color: #eee;
-        padding: 5px;
-        width: min(100%, 100%);
-        height: min(70vw, 70vh);
-        margin: auto;
-      }
-      
-      .grid-linha{
-        display: flex;
-        flex-direction: row;
-        flex: 1;
-        width: 100%;
-      }
-      
-      .grid-celula{
-        flex: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .grid-letra{
-        font-size: 12px;
-        color: #000;
-        cursor: pointer;
-        user-select: none;
-      }
-      
-      .grid-letra.grid-letra-fixa{
-        color: black;
-      }
-      
-      .canvas-selecao-palavras{
-        position: absolute;
-        border: 2px solid transparent;
-        width: 100%;
-        height: 100%;
-      }
-      
-      .lista-palavras{
-        font-size: 14px;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        user-select: none;
-        border-radius: 10px;
-        border: 2px solid #ccc;
-        background-color: #eee;
-        padding: 5px 10px;
-        max-width: 100%;
-        max-height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        color: black;
-      }
-      
-      .item-palavra{
-        width: 30%;
-        font-size: 12px;
-        padding: 2px;
-        /*cursor: pointer;*/
-      }
-      
-      .item-palavra.item-palavra-encontrada{
-        text-decoration: line-through;
-      }
-      
-      .form-cadastrar-palavra{
-        width: 100%;
-      }
-    
-    /* ----------------footer------------------ */
-    
-    
-    .footer-container-1{
-      margin-top: 100px;
-      height: 254px;
-      width: 100%;
-      background-color: #131111;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-    }
-    
-    .footer-container-1 img{
-      height: 115px;
-      width: 115px;
-      transition: all .55s ease;
-    }
-    
-    .footer-container-1 img:hover{
-      transform: scale(1.1);
-    }
-    
-    .footer-container-1 p{
-      color: white;
-      font-size: 22px;
-    }
-    
-    .icons{
-      font-size: 30px;
-      display: flex;
-      align-items: center;
-      color: white;
-      gap: 30px;
-    }
-    
-    #instagram{
-      transition: all .55s ease;
-    }
-    
-    #instagram:hover{
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-    
-    #github{
-      transition: all .55s ease;
-    }
-    
-    #github:hover{
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-    
-    #twitter{
-      transition: all .55s ease;
-    }
-    
-    #twitter:hover{
-      cursor: pointer;
-      transform: scale(1.1);
-    }
-    
-    .linha-footer{
-      height: 1px;
-      width: 100%;
-      background-color: white;
-    }
-    
-    .footer-container-2{
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      height: 100px;
-      width: 100%;
-      background-color: #131111;
-    }
-    
-    .footer-container-2 button{
-      height: 40px;
-      width: 240px;
-      border: 1px solid white;
-      background-color: transparent;
-      color: white;
-      font-size: 18px;
-      transition: all .55s ease;
-      cursor: pointer;
-    }
-    
-    #botao-footer-1{
-      transition: all .55s ease;
-    }
-    
-    #botao-footer-1:hover{
-      transform: scale(1.05);
-      box-shadow: 0px 0px 10px #e21a41;
-    }
-    
-    #botao-footer-2{
-      transition: all .55s ease;
-    }
-    
-    #botao-footer-2:hover{
-      transform: scale(1.05);
-      box-shadow: 0px 0px 10px #e21a41;
-    }
-    }
-    
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: gray;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e21a41;
+  }
+
+  body {
+    background-color: white;
+    color: #fff;
+  }
+
+  header {
+    height: 200px;
+    background: #131111;
+    padding: 30px 1%;
+    /* background-image: linear-gradient(90deg,transparent,transparent 50%,#414143 calc(50% + 1.5px),transparent calc(50% + 1.5px)); */
+  }
+
+  .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  #logo {
+    height: 115px;
+    width: 115px;
+    transition: all .55s ease;
+  }
+
+  #logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #item-navbar {
+    max-width: 1280px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 2s ease;
+  }
+
+  #item-navbar:hover {
+    text-decoration: none;
+    background: linear-gradient(90deg, #e21a41 60%, transparent 0) left 1rem bottom/220% 100%;
+    box-shadow: none;
+  }
+
+  #item-navbar-jogos {
+    max-width: 1280px;
+    font-size: 20px;
+    color: #E21A41;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 2s ease;
+  }
+
+  #item-navbar-jogos:hover {
+    text-decoration: none;
+    box-shadow: none;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+
+  /* -----------------caça-palavras-------------------- */
+
+  main {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .row.row-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+
+  .box-3 {
+    width: calc(3*100%/12);
+  }
+
+  .box-4 {
+    width: calc(4*100%/12);
+  }
+
+  .box-6 {
+    width: calc(6*100%/12);
+  }
+
+  .box-8 {
+    width: calc(8*100%/12);
+  }
+
+  .box-12 {
+    width: calc(12*100%/12);
+  }
+
+  .form-titulo {
+    font-weight: bold;
+    font-size: 14pt;
+    text-align: center;
+    color: black;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+  }
+
+  .form-group>label {
+    font-size: 9pt;
+  }
+
+  .input {
+    border: 1px solid transparent;
+    border-bottom-color: #ccc;
+    outline-style: none;
+    padding: 3px;
+  }
+
+  .btn {
+    border: 1px solid #ccc;
+    width: fit-content;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #eee;
+  }
+
+  .mensagem-erro {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #eba2a2;
+    color: #a91c1c;
+    padding: 5px 10px;
+    border: 1px solid #a91c1c;
+    border-left-width: 5px;
+    margin-top: 5px;
+    font-size: 10pt;
+    border-radius: 3px;
+  }
+
+  .mensagem-erro.active {
+    display: block;
+  }
+
+  .grid-caca-palavras {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    padding: 5px;
+    width: min(100%, 100%);
+    height: min(70vw, 70vh);
+    margin: auto;
+  }
+
+  .grid-linha {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%;
+  }
+
+  .grid-celula {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-letra {
+    font-size: 12px;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .grid-letra.grid-letra-fixa {
+    color: black;
+  }
+
+  .canvas-selecao-palavras {
+    position: absolute;
+    border: 2px solid transparent;
+    width: 100%;
+    height: 100%;
+  }
+
+  .lista-palavras {
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #eee;
+    padding: 5px 10px;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+  }
+
+  .item-palavra {
+    width: 30%;
+    font-size: 12px;
+    padding: 2px;
+    /*cursor: pointer;*/
+  }
+
+  .item-palavra.item-palavra-encontrada {
+    text-decoration: line-through;
+  }
+
+  .form-cadastrar-palavra {
+    width: 100%;
+  }
+
+  /* ----------------footer------------------ */
+
+
+  .footer-container-1 {
+    margin-top: 100px;
+    height: 254px;
+    width: 100%;
+    background-color: #131111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer-container-1 img {
+    height: 115px;
+    width: 115px;
+    transition: all .55s ease;
+  }
+
+  .footer-container-1 img:hover {
+    transform: scale(1.1);
+  }
+
+  .footer-container-1 p {
+    color: white;
+    font-size: 22px;
+  }
+
+  .icons {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 30px;
+  }
+
+  #instagram {
+    transition: all .55s ease;
+  }
+
+  #instagram:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #github {
+    transition: all .55s ease;
+  }
+
+  #github:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  #twitter {
+    transition: all .55s ease;
+  }
+
+  #twitter:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .linha-footer {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+  }
+
+  .footer-container-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    background-color: #131111;
+  }
+
+  .footer-container-2 button {
+    height: 40px;
+    width: 240px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    transition: all .55s ease;
+    cursor: pointer;
+  }
+
+  #botao-footer-1 {
+    transition: all .55s ease;
+  }
+
+  #botao-footer-1:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #e21a41;
+  }
+
+  #botao-footer-2 {
+    transition: all .55s ease;
+  }
+
+  #botao-footer-2:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px #e21a41;
+  }
+}

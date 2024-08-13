@@ -15,20 +15,19 @@
     <main>
         <section class="container-login">
             <div class="login">
-                <img src="logo-geodiverso-preta.png">
-                <h1 id="h1-login" data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="800">Login
+                <!-- <img src="logo-geodiverso-preta.png"> -->
+                <h1 id="h1-login" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="800">Login
                 </h1>
-                <input type="email" placeholder="Email" id="input-email" data-aos="fade-down"
-                    data-aos-easing="ease-out-cubic" data-aos-duration="1200">
-                <input type="password" placeholder="Senha" id="input-senha" data-aos="fade-down"
-                    data-aos-easing="ease-out-cubic" data-aos-duration="1500">
+                <input type="email" placeholder="Email" id="input-email" data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="800">
+                <input type="password" placeholder="Senha" id="input-senha" data-aos="zoom-in"
+                    data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 <div class="login-botao">
-                    <!-- <a href="../../../FRONT/home/home.html"> -->
-                    <button onclick="handleSubmit(event)" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1500">Entrar</button>
-                    <!-- </a> -->
-                    <a href="../cadastro/cadastro.html" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1700">Criar conta</a>
+                    <a>
+                        <button onclick="handleSubmit(event)">Login</button>
+                    </a>
+                    <p>Não tem uma conta? <a href="../cadastro/cadastro.html">Cadastrar</a></p>
+
                 </div>
             </div>
         </section>
@@ -48,6 +47,11 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- ----------------animacoes-------------- -->
+    <!-- 
+    data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
+    data-aos-duration="1700" -->
 
 </body>
 

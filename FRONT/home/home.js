@@ -21,13 +21,17 @@ sr.reveal('.sobre-mapas p', {delay:150, origin: 'left'});
 
 sr.reveal('.sobre-mapas a', {delay:150, origin: 'left'});
 
-// sr.reveal('.sobre-mapas img', {delay:10, origin: 'left'});
-
 sr.reveal('.container-sobre-curiosidades h1', {delay:100, origin: 'right'});
 
 sr.reveal('.container-sobre-curiosidades p', {delay:140, origin: 'right'});
 
 sr.reveal('.container-sobre-curiosidades a', {delay:180, origin: 'right'});
+
+sr.reveal('.text h1', {delay:100, origin: 'top'});
+
+sr.reveal('.text p', {delay:140, origin: 'top'});
+
+sr.reveal('.text a', {delay:180, origin: 'top'});
 
 let count = 1
 document.getElementById("radio1").checked = true;

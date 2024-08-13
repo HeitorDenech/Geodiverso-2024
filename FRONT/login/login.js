@@ -19,7 +19,7 @@ async function handleSubmit(event) {
  
     if(result.success) {
         console.log(result.data);
-        window.location.href = "../../../FRONT/home/home.html";
+        window.location.href = "../home/home.html";
        
     } else {
         Swal.fire({

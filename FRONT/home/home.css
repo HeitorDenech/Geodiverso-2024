@@ -65,13 +65,13 @@
         text-decoration: none;
         background: linear-gradient(90deg, #e21a41 60%, transparent 0) left 1rem bottom/220% 100%;
         box-shadow: none;
-    }   
+    }
 
     header nav ul li {
         display: inline-block;
         padding: 0 20px;
     }
- 
+
     /* ---------------------main----------------------- */
 
 
@@ -444,6 +444,67 @@
     .container-sobre-curiosidades button:hover {
         background-color: black;
         color: white;
+    }
+
+    /* -----------------sobre-nos----------------- */
+
+    .sobre-nos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sobre-nos-container{
+        height: 400px;
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .sobre-nos-container img{
+        height: 400px;
+        width: 550px;
+    }
+
+    .text{
+        text-align: start;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        height: 300px;
+        width: 500px;
+        border-radius: 20px;
+    }
+
+    .text h1{
+        font-size: 38px;
+        letter-spacing: 0.75px;
+    }
+
+    .text p{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .text button{
+        border: 1px solid black;
+        letter-spacing: 0.75px;
+        margin-top: 15px;
+        height: 40px;
+        width: 240px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        font-size: 19px;
+        transition: all .55s ease;
+        cursor: pointer;
+    }
+
+    .text button:hover{
+        letter-spacing: 1px;
+        background-color: white;
+        color: black;
     }
 
     /* 

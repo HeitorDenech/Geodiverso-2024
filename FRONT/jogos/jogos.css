@@ -261,13 +261,13 @@
     .container-jogos-principal{
         padding: 30px;
         width: 951px;
-        height: 600px;
         border: 1px solid black;
         border-radius: 20px;
         display: flex;
         align-items: start;
         justify-content: start;
         flex-wrap: wrap;
+        gap: 20px;
     }
 
     .container-jogos{
@@ -290,6 +290,7 @@
         margin-left: 10px;
         font-size: 17px;
         color: black;
+        width: 700px;
     }
 
     .text{
@@ -298,11 +299,10 @@
     }
 
     .jogos{
-        width: 164px;
+        width: 170px;
         height: 104px;
         border: 1px solid black;
         display: flex;
-        flex-direction: column;
         overflow: hidden;
         border-radius: 20px;
         transition: all .55s ease;

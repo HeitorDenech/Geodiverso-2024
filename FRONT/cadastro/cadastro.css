@@ -55,7 +55,7 @@
 
     .cadastro input {
         border: 1px solid black;
-        border-radius: 20px;
+        border-radius: 50vw;
         margin-top: 40px;
         height: 75px;
         width: 559px;
@@ -76,7 +76,7 @@
         background-color: black;
         color: white;
         border: 1px solid black;
-        border-radius: 20px;
+        border-radius: 50vw;
         font-size: 22px;
         transition: all .55s ease;
         cursor: pointer;

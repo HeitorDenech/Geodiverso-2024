@@ -599,3 +599,5 @@ function map(valueIn, minIn, maxIn, minOut, maxOut) {
     divMensagemErro.classList.remove('active');
     document.querySelector('.input-palavra').value = '';
   })
+
+  
