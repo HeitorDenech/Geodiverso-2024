@@ -5,7 +5,7 @@ const sr = ScrollReveal({
   reset: true
 })
 
-sr.reveal('.interface', { delay: 100, origin: 'top' });
+// sr.reveal('.interface', { delay: 100, origin: 'top' });
 
 sr.reveal('.txt-topo-site', { delay: 100, origin: 'left' });
 
@@ -149,7 +149,7 @@ const questions = [
     ]
   },
   {
-    question: 'É verdade que a São Paulo é o estado que possui maior PIB per capita?',
+    question: 'É verdade que São Paulo é o estado que possui maior PIB per capita?',
     answers: [
       { text: "Verdadeiro", correct: false },
       { text: "Falso", correct: true }

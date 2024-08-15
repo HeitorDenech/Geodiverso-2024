@@ -5,9 +5,11 @@ const sr = ScrollReveal ({
     reset: true
 })
 
-sr.reveal('.interface', {delay:100, origin: 'top'});
+// sr.reveal('.interface', {delay:100, origin: 'top'});
 
 sr.reveal('.txt-topo-site', {delay:100, origin: 'left'});
+
+sr.reveal('.carrosel', {delay:100, origin: 'right'});
 
 sr.reveal('.content', {delay:200, origin: 'right'});
 

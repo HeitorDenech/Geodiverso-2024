@@ -5,13 +5,19 @@ const sr = ScrollReveal ({
     reset: true
 })
 
-sr.reveal('.interface', {delay:100, origin: 'top'});
+// sr.reveal('.interface', {delay:100, origin: 'top'});
 
 sr.reveal('.txt-topo-site', {delay:100, origin: 'left'});
 
 sr.reveal('.carrosel', {delay:100, origin: 'right'});
 
 sr.reveal('.mapas-container', {delay:100, origin: 'top'});
+
+sr.reveal('.mapas-curiosidade h1', {delay:100, origin: 'right'});
+
+sr.reveal('.mapas-curiosidade p', {delay:150, origin: 'right'});
+
+sr.reveal('.mapas-curiosidade a', {delay:200, origin: 'right'});
 
 let count = 1
 document.getElementById("radio1").checked = true;

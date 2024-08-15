@@ -5,7 +5,7 @@ const sr = ScrollReveal({
     reset: true
   })
   
-  sr.reveal('.interface', { delay: 100, origin: 'top' });
+  // sr.reveal('.interface', { delay: 100, origin: 'top' });
   
   sr.reveal('.txt-topo-site', { delay: 100, origin: 'left' });
   
@@ -131,7 +131,7 @@ const sr = ScrollReveal({
       ]
     },
     {
-      question: "Qual a maior cidade do mundo?",
+      question: "Qual a maior cidade do mundo? (População)",
       answers: [
         { text: "São Paulo", correct: false },
         { text: "Xangai", correct: false },

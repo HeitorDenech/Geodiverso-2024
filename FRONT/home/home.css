@@ -76,7 +76,7 @@
 
 
     .interface-main {
-        height: 500px;
+        height: 400px;
         background: #161618;
         display: flex;
         align-items: center;
@@ -268,7 +268,7 @@
 
     .sobre-jogos p {
         letter-spacing: 0px;
-        margin-top: 20px;
+        margin-top: 30px;
         font-size: 36px;
         width: 500px;
         text-align: center;
@@ -461,9 +461,9 @@
         gap: 100px;
     }
 
-    .sobre-nos-container img{
+    .sobre-nos img{
         height: 400px;
-        width: 550px;
+        width: 50%;
     }
 
     .text{
