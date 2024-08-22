@@ -88,6 +88,12 @@
         padding: 0 20px;
     }
 
+    .icon-navbar a{
+        font-size: 50px;
+        color: white;
+        transition: all .55s ease;
+    }
+
     /* ---------------------main----------------------- */
 
     .interface-main {
@@ -356,32 +362,33 @@
 
     /* ------------------footer------------------ */
 
-    .footer-container-1{
-        margin-top: 50px;
+    .footer-container-1 {
+        margin-top: 20px;
         height: 254px;
         width: 100%;
         background-color: #131111;
         display: flex;
         align-items: center;
         justify-content: space-around;
+        border-bottom: 1px solid white;
     }
 
-    .footer-container-1 img{
+    .footer-container-1 img {
         height: 115px;
         width: 115px;
         transition: all .55s ease;
     }
 
-    .footer-container-1 img:hover{
+    .footer-container-1 img:hover {
         transform: scale(1.1);
     }
 
-    .footer-container-1 p{
+    .footer-container-1 p {
         color: white;
         font-size: 22px;
     }
 
-    .icons{
+    .icons {
         font-size: 30px;
         display: flex;
         align-items: center;
@@ -389,40 +396,40 @@
         gap: 30px;
     }
 
-    #instagram{
+    #instagram {
         transition: all .55s ease;
     }
 
-    #instagram:hover{
+    #instagram:hover {
         cursor: pointer;
         transform: scale(1.1);
     }
 
-    #github{
+    #github {
         transition: all .55s ease;
     }
 
-    #github:hover{
+    #github:hover {
         cursor: pointer;
         transform: scale(1.1);
     }
 
-    #twitter{
+    #twitter {
         transition: all .55s ease;
     }
 
-    #twitter:hover{
+    #twitter:hover {
         cursor: pointer;
         transform: scale(1.1);
     }
 
-    .linha-footer{
+    /* .linha-footer {
         height: 1px;
         width: 100%;
         background-color: white;
-    }
+    } */
 
-    .footer-container-2{
+    .footer-container-2 {
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -431,7 +438,7 @@
         background-color: #131111;
     }
 
-    .footer-container-2 button{
+    .footer-container-2 button {
         height: 40px;
         width: 240px;
         border: 1px solid white;
@@ -442,23 +449,21 @@
         cursor: pointer;
     }
 
-    #botao-footer-1{
+    #botao-footer-1 {
         transition: all .55s ease;
     }
 
-    #botao-footer-1:hover{
-        transform: scale(1.05);
-        box-shadow: 0px 0px 10px #e21a41;
+    #botao-footer-1:hover {
+        background-color: white;
+        color: black;
     }
 
-    #botao-footer-2{
+    #botao-footer-2 {
         transition: all .55s ease;
     }
 
-    #botao-footer-2:hover{
-        transform: scale(1.05);
-        box-shadow: 0px 0px 10px #e21a41;
+    #botao-footer-2:hover {
+        background-color: white;
+        color: black;
     }
-
-
 }   

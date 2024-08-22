@@ -1,8 +1,9 @@
 const { Router } = require('express');
 const router = Router();
 
-const { storeConteudo } = require('../controller/conteudoController');
+const { getConteudo } = require('../controller/conteudoController');
 
-router.get('/store/conteudo', storeConteudo);
+router.get('/conteudos', getConteudo)
+// router.get('/store/conteudo', storeConteudo);
 
 module.exports = router;

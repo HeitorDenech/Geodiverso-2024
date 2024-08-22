@@ -2,7 +2,7 @@ const sr = ScrollReveal ({
     distance: '65px',
     duration: 2600,
     delay: 450,
-    reset: true
+    reset: false // Para que a animação ocorra apenas uma vez
 })
 
 // sr.reveal('.interface', {delay:100, origin: 'top'});
