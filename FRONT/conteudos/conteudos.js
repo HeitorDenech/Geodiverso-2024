@@ -27,13 +27,6 @@ function nextImage() {
 
 }
 
-const curiosidades = document.querySelectorAll(".content");
-
-curiosidades.forEach(content => {
-    content.addEventListener("click", () => {
-        content.classList.toggle("active")
-    })
-})
 
 // ----------------API_conteúdos-------------------
 
@@ -55,11 +48,9 @@ async function getConteudos() {
 
             // localStorage.setItem(page, conteudos.id)
 
-            let card = "<div class='container-conteudos - principal'> "  +
-                "<div class='accordion' >" +
-                    "<div class='content'>" +
+            let card = "<div class='content'>" +
                         "<div class='question'>" +
-                            "<img src='../img/globalizacao.png' alt='' srcset=''>" +
+                            // "<img src='../img/globalizacao.png' alt='' srcset=''>" +
                                 "<div class='title-accordion'>" +
                                    " <h3>" + conteudos.titulo + "</h3>" +
                                    " <p>" + conteudos.sub_titulo + "<span>Ver mais.</span></p>" +
@@ -72,11 +63,21 @@ async function getConteudos() {
                            " <p>" + conteudos.texto_conteudo + "</p> "+
                         "</div> "+
                     "</div>" +
-           " </div >" +
-       " </div > ";
+                    "</div>";
 
             html.innerHTML += card;
         });
+
+        const curiosidades = document.querySelectorAll(".content");
+
+curiosidades.forEach(content => {
+    
+    content.addEventListener("click", () => {
+        content.classList.toggle("active")
+    })
+})
+
+
 
     } else {
         alert(results.message)

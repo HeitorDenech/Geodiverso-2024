@@ -330,13 +330,18 @@
         color: black;
     }
 
+    .title-accordion p{
+        width: 600px;
+        font-size: 20px;
+    }
+
     svg{
         margin-left: 500px;
         font-size: 30px;
     }
 
     .question h3{
-        font-size: 18px;
+        font-size: 25px;
         width: 400px;
         display: flex;
     }
@@ -351,9 +356,10 @@
     
     .answer p{
         line-height: 1.6;
-        font-size: 16px;
-        padding: 5px 5px;
+        font-size: 18px;
+        /* padding: 5px 5px; */
         text-align: start;
+        color: rgb(56, 56, 56);
     }
 
     .content.active .answer{
