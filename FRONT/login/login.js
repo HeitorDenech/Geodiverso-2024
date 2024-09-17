@@ -28,7 +28,7 @@ async function handleSubmit(event) {
     const email = document.getElementById('input-email').value;
     const password = document.getElementById('input-senha').value;
 
-    const data = { email, password };
+    const data = { email,    password };
     console.log(data);
 
     const response = await fetch('http://localhost:3005/api/login', {
