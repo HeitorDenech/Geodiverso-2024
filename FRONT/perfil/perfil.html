@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="shortcut icon" href="../img/logo-geodiverso.png" type="image/x-icon">
-    <link rel="stylesheet" href="../jogos/jogos.css">
-    <title>Jogos</title>
+    <link rel="stylesheet" href="perfil.css">
+    <title>Perfil</title>
 </head>
 <body>
 
@@ -14,17 +14,18 @@
         <nav class="interface">
             <div>
                 <a href="../home/home.html">
-                    <img id="logo" src="../img/logo-geodiverso.png" alt="">
+                    <img id="logo" src="../img/logo-geodiverso.png" alt="" data-aos="zoom-in"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="800">
                 </a>
             </div>
 
             <div class="links">
                 <ul class="nav-itens">
-                   <li><a href="../conteudos/conteudos.html" id="item-navbar">Conteúdos</a></li>
-                   <li><a href="../mapas/mapas.html" id="item-navbar">Mapas</a></li>
-                   <li><a href="../curiosidades/curiosidades.html" id="item-navbar">Curiosidades</a></li>
-                   <li><a href="#" id="item-navbar-jogos">Jogos</a></li>
-                   <li><a href="../perfil/perfil.html" id="item-navbar-perfil"><i id="icon-person" class="bi bi-person"></i></a></li>
+                    <li><a href="../conteudos/conteudos.html" id="item-navbar">Conteúdos</a></li>
+                    <li><a href="../mapas/mapas.html" id="item-navbar">Mapas</a></li>
+                    <li><a href="../curiosidades/curiosidades.html" id="item-navbar">Curiosidades</a></li>
+                    <li><a href="../jogos/jogos.html" id="item-navbar">Jogos</a></li>
+                    <li><a href="#" id="item-navbar-perfil"><i id="icon-person" class="bi bi-person"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -38,15 +39,20 @@
                         <div class="txt-topo-site">
                             <h1>Geodiverso</h1>
                             <p>Seja bem vindo ao Geodiverso, esperamos que aproveite e se divirta com a plataforma</p>
-    
+
+                            <!-- <div class="btn-contato">
+                                <a href="#input-email">
+                                    <button>Faça login</button>
+                                </a>
+                            </div> -->
                         </div>
 
                         <!-- ------------carrosel--------------- -->
 
                         <div class="carrosel">
- 
+
                             <div class="slides">
-             
+
                                 <input type="radio" name="radio-botao" id="radio1">
                                 <input type="radio" name="radio-botao" id="radio2">
                                 <input type="radio" name="radio-botao" id="radio3">
@@ -67,80 +73,69 @@
                                 <div class="slide">
                                     <img src="../img/img-carrosel-4.jpg" alt="imagem 4">
                                 </div>
-             
+
                                 <div class="navegacao-botao">
                                     <div class="botao-1"></div>
                                     <div class="botao-2"></div>
                                     <div class="botao-3"></div>
                                     <div class="botao-4"></div>
-                                </div>  
-             
+                                </div>
+
                             </div>
-             
+
                             <section class="navegacao-manual">
                                 <label for="radio1" class="manual-botao"></label>
                                 <label for="radio2" class="manual-botao"></label>
                                 <label for="radio3" class="manual-botao"></label>
                                 <label for="radio4" class="manual-botao"></label>
                             </section>
-             
+
                         </div>
 
-                        <!-- ----------------carrosel--------------- -->       
+                        <!-- ----------------carrosel--------------- -->
 
                     </div>
                 </div>
             </section>
         </div>
 
-        <sectiton class="pagina-jogos">
-            <div class="container-jogos-principal">
-
-                <div class="container-jogos">
-                    <div class="jogos">
-                        <a href="../quiz/quiz.html">
-                            <img src="../img/img-brasil.webp" alt="">
-                        </a>
+        <section class="section-perfil">
+            <div class="perfil">
+                <div class="container-perfil">
+                    <div class="Informacoes-usuario">
+                        <div class="text-header">
+                            <p>
+                                <span>Nome:</span> 
+                                <span id="nome">fulano</span>
+                            </p>
+                            <p>
+                                <span>Email:</span> 
+                                <span id="email">alguma coisa</span>
+                            </p>
+                            <p id="conta-criada">
+                                Conta criada em: 01/01/2024
+                            </p>
+                        </div>
+                        <div class="logo-perfil">
+                            <a href="#logo">
+                                <img src="../img/logo-geodiverso.png" alt="" id="img">
+                            </a>
+                        </div>
                     </div>
-                    <div class="text">
-                        <h1>Quiz Do Brasil</h1>
-                        <p>Teste seus conhecimentos geográficos do Brasil, através de perguntas rápidas e divertidas.</p>
-                    </div>
-                </div>
-
-                <div class="container-jogos">
-                    <div class="jogos">
-                        <a href="../jogo_das_bandeiras/jogo_das_bandeiras.html">
-                            <img src="../img/bandeiras.webp" alt="">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <h1>Adivinhe o país pela bandeira</h1>
-                        <p>Teste seus conhecimentos geográficos adivinhando o país pela sua bandeira.</p>
-                    </div>
-                </div>
-
-                <div class="container-jogos">
-                    <div class="jogos">
-                        <a href="../quiz_geografia/quiz_geografia.html">
-                            <img src="../img/cerebro.png" alt="">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <h1>Quiz de Geografia</h1>
-                        <p>Teste seus conhecimentos geográficos através de perguntas rápidas e divertidas.</p>
-                    </div>
-                </div>
-
-                <div class="container-jogos">
-                    <div class="jogos">
-                        <a href="../quiz_sul/quiz_sul.html">
-                            <img src="../img/img-rs.jfif" alt="">
-                        </a>
-                    </div>
-                    <div class="text">
-                        <h1>Quiz do Rio Grande Do Sul</h1>
-                        <p>Teste seus conhecimentos geográficos sobre o Rio Grande Do Sul, através de perguntas rápidas e divertidas.</p>
+                    <div class="conta">
+                        <div class="botoes-container">
+                            <div class="botoes">
+                                <button id="botao-sair">
+                                    Sair da conta <i class="bi bi-box-arrow-in-left"></i>
+                                </button>
+                                <button id="botao-deletar">
+                                    Deletar conta <i class="bi bi-x-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="imagem-conta">
+                                <img src="../img/geografia-desenho.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -169,9 +164,11 @@
 
     <script defer src="https://unpkg.com/scrollreveal"></script>
 
-    <script defer src="jogos.js"></script>
+    <script defer src="perfil.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 </html>

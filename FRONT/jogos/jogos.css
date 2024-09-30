@@ -95,6 +95,16 @@
         transition: all .55s ease;
     }
 
+    .nav-itens #icon-person{
+        color: white;
+        font-size: 30px;
+        transition: all .55s ease-in-out;
+    }
+
+    .nav-itens #icon-person:hover{
+        color: #E21A41;
+    }
+
     /* ---------------------main----------------------- */
 
     .interface-main {

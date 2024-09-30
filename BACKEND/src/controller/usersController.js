@@ -31,6 +31,44 @@ async function storeUser(request, response) {
     })
 }
 
+async function deleteConta(request, response) {
+    const userId = request.body.cliente_id;
+
+    console.log("userId na sessão:", userId);
+
+    if (!userId) {
+        return response.status(401).json({
+            success: false,
+            message: "Usuário não autenticado."
+        });
+    }
+
+    const query = "DELETE FROM users WHERE id = ?;";
+
+    connection.query(query, [userId], (err, results) => {
+        if (err) {
+            console.error("Erro ao deletar a conta:", err);
+            return response.status(500).json({
+                success: false,
+                message: "Erro ao deletar a conta."
+            });
+        }
+
+        if (results.affectedRows > 0) {
+            return response.status(200).json({
+                success: true,
+                message: "Conta deletada com sucesso!"
+            });
+        } else {
+            return response.status(404).json({
+                success: false,
+                message: "Conta não encontrada."
+            });
+        }
+    });
+}
+
 module.exports = {
-    storeUser
+    storeUser,
+    deleteConta
 };

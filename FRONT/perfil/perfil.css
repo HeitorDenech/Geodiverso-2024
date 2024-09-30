@@ -1,5 +1,4 @@
 @media screen and (max-width:2280px) {
-
     * {
         padding: 0;
         margin: 0;
@@ -11,23 +10,23 @@
         scroll-behavior: smooth;
     }
 
-      /* width */
-      ::-webkit-scrollbar {
+    /* width */
+    ::-webkit-scrollbar {
         width: 10px;
-        }
-        
-        /* Track */
-        ::-webkit-scrollbar-track {
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
         background: black;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: gray;
-            }
-        
-        ::-webkit-scrollbar-thumb:hover {
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: gray;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
         background: #e21a41;
-        }
+    }
 
     header {
         height: 200px;
@@ -68,7 +67,7 @@
         box-shadow: none;
     }
 
-    #item-navbar-mapas {
+    #item-navbar-perfil {
         max-width: 1280px;
         font-size: 20px;
         color: #E21A41;
@@ -77,11 +76,10 @@
         transition: all 2s ease;
     }
 
-    #item-navbar-mapas:hover {
+    #item-navbar-perfil:hover {
         text-decoration: none;
         box-shadow: none;
     }
-    
 
     header nav ul li {
         display: inline-block;
@@ -95,15 +93,9 @@
     }
 
     .nav-itens #icon-person{
-        color: white;
         font-size: 30px;
-        transition: all .55s ease-in-out;
     }
 
-    .nav-itens #icon-person:hover{
-        color: #E21A41;
-    }
-    
     /* ---------------------main----------------------- */
 
 
@@ -143,6 +135,27 @@
         width: 400px;
     }
 
+    /* .btn-contato button {
+        height: 50px;
+        width: 240px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: black;
+        color: white;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all .55s ease;
+        border: 1px solid white;
+    }
+
+    .btn-contato button:hover {
+        box-shadow: 0px 0px 10px #e21a41;
+        transform: scale(1.05);
+        border: none;
+    } */
+
+
     /* -----------------CARROSEL------------------ */
 
     .carrosel {
@@ -176,14 +189,15 @@
     .slide img {
         width: 600px;
         position: relative;
-        animation: efeito-flutuante 2.5s ease-in-out infinite alternate;
+        animation: efeito-flutuante 2.7s ease-in-out infinite alternate;
     }
- 
-    @keyframes efeito-flutuante{
-        0%{
+
+    @keyframes efeito-flutuante {
+        0% {
             top: 0;
         }
-        100%{
+
+        100% {
             top: -30px;
         }
     }
@@ -255,207 +269,182 @@
     #radio2:checked~.navegacao-botao .botao-2 {
         background-color: white;
     }
-    
+
     #radio3:checked~.navegacao-botao .botao-3 {
-    background-color: white;
+        background-color: white;
     }
 
     #radio4:checked~.navegacao-botao .botao-4 {
         background-color: white;
     }
-/* 
-    ----------------mapas----------------------- */
 
-    .mapas{
-        margin-top: 50px;
+    /* ---------------Section-perfil------------------ */
+
+    .section-perfil{
+        height: 550px;
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        background: transparent;
+        background: linear-gradient(180deg, #363636 50%, #262626 50%);
     }
 
-    .container-mapas-principal{
-        padding: 20px;
-        gap: 20px;
-        width: 951px;
-        border: 1px solid black;
-        border-radius: 20px;
+    .perfil{    
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
     }
 
-    .mapas-container{
-        width: 250px;
-        height: 250px;
-        border: 1px solid black;
+    .container-perfil{
+        height: 520px;
+        width: 950px;
+        background-color: transparent;
         display: flex;
         flex-direction: column;
-        overflow: hidden;
     }
 
-    .mapas-container img{
-        width: 100%;
-        height: 150px;
-        transition: all .55s ease;
-    }
-
-    .mapas-container img:hover{
-        transform: scaleX(1.05);
-    }
-
-    .title-mapas{
-        width: 100%;
-        height: 60px;
-        background-color: black;
-        color: white;
-        font-size: 22px;
-    }
-
-    .title-mapas p{
-        text-align: center;
-        margin-top: 15px;
-    }
-
-    .botao-mapas button{
-        width: 90%;
-        height: 40px;
-        background: transparent;
-        border: .5px solid black;
-        font-size: 23px;
-        transition: all .55s ease;
-    }
-
-    .botao-mapas button:hover{
-        cursor: pointer;
-    }
-
-    .botao-mapas a{
-        color: #E21A41;
-        text-decoration: none;
-    }
-
-    .botao-mapas i{
-        height: 40px;
-        width: 10%;
-        font-size: 20px;
-        transition: all .55s ease;
-        color: black;
-    }
-    
-    .botao-mapas i:hover{
-        cursor: pointer;
-    } 
-
-    /* ------------container-curiosidades-------------- */
-
-    .container-curiosidades{
-        margin-top: 40px;
-        background-color: #161618;
-        height: 400px;
+    .Informacoes-usuario{
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        border-radius: 20px 20px 0px 0px;
+        height: 35%;
+        background-color: #262626;
     }
 
-    .container-curiosidades img{
+    .logo-perfil {
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
         height: 100%;
-        width: 50%;
-    }
-
-    .mapas-curiosidade{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 20px;
-        width: 500px;   
-        margin-left: 55px;
-    }
-
-    .mapas-curiosidade h1{
-        font-size: 42px;
+        background-color: #262626;
+        width: 30%;
+        border-radius: 20px;
         color: white;
     }
 
-    .mapas-curiosidade p{
-        font-size: 22px;
+    .text-header{
+        width: 70%;
+        background-color: #151515;
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 60% 100%, 0 100%);
+        border-radius: 20px 0px 0px 0px;
+    }
+
+    .text-header p{
+        padding: 10px;
+        /* margin-top: 10px; */
+        font-size: 26px;
+        letter-spacing: 1px;
         color: white;
-        letter-spacing: 0.75px;
     }
 
-    .mapas-curiosidade a {
-        text-decoration: none;
+    #conta-criada{
+        font-size: 14px;
+        opacity: 40%;
     }
 
-    .btn {
-        line-height: 50px;
-        height: 50px;
-        text-align: center;
-        width: 250px;
-        cursor: pointer;
-    }
-
-    .btn-one {
-        color: #FFF;
-        transition: all 0.3s;
-        position: relative;
-    }
-
-    .btn-one span {
-        transition: all 0.3s;
-        font-size: 20px;
+    .perfil span{
+        color: #e21a41;
         letter-spacing: 1px;
     }
 
-    .btn-one::before {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        opacity: 0;
-        transition: all 0.3s;
-        border-top-width: 1px;
-        border-bottom-width: 1px;
-        border-top-style: solid;
-        border-bottom-style: solid;
-        border-top-color: rgba(255, 255, 255, 0.5);
-        border-bottom-color: rgba(255, 255, 255, 0.5);
-        transform: scale(0.1, 1);
+    #nome{
+        color: white;
     }
 
-    .btn-one:hover span {
-        letter-spacing: 2px;
+    #email{
+        color: white;
     }
 
-    .btn-one:hover::before {
-        opacity: 1;
-        transform: scale(1, 1);
+    #img{
+        height: 140px;
+        width: 140px;
+        cursor: pointer;
     }
 
-    .btn-one::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        transition: all 0.3s;
-        background-color: rgba(102, 102, 102, 0.1);
+    .conta{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 65%;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .botoes-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        background-color: white;
+        border-radius: 0px 0px 0px 20px;
+    }
+
+    .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botoes #botao-sair{
+        margin-top: 10px;
+        height: 60px;
+        width: 400px;  
         border-radius: 20px;
-        border: 1px solid rgb(167, 167, 167);
+        border: 2px solid #e21a41;
+        background-color: transparent; 
+        transition: .55s ease-in-out;
+        font-size: 21px;
+        letter-spacing: 0.75px;
+        transform: scaleX(0.9);
+        padding: 10px;
     }
 
-    .btn-one:hover::after {
-        opacity: 0;
-        transform: scale(0.1, 1);
+    .botoes #botao-sair:hover{
+        cursor: pointer;
+        background-color: #e21a41;
+        color: white;
+        font-size: 22px;
+        letter-spacing: 1px;
+        transform: scaleX(0.95);
     }
 
-    /* ------------------footer------------------ */
-    .footer-container-1 {  
+    .botoes #botao-deletar{
+        margin-top: 10px;
+        height: 60px;
+        width: 400px;  
+        border-radius: 20px;
+        border: 2px solid #e21a41;
+        background-color: #e21a41; 
+        transition: .55s ease-in-out;
+        font-size: 21px;
+        letter-spacing: 0.75px;
+        color: white;
+        transform: scaleX(0.9);
+    }
+
+    .botoes #botao-deletar:hover{
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        font-size: 22px;
+        letter-spacing: 1px;
+        transform: scaleX(0.95);
+    }
+
+    .imagem-conta{
+        width: 50%;
+    }
+
+    .imagem-conta img{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 0px 20px 0px;
+        /* filter: blur(0.5px); */
+    }
+
+     /* 
+    ----------------------footer---------------------- */
+
+    .footer-container-1 {
         height: 254px;
         width: 100%;
         background-color: #131111;
@@ -558,4 +547,4 @@
         background-color: white;
         color: black;
     }
-}   
+}
