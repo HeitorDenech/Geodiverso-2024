@@ -548,3 +548,60 @@
         color: black;
     }
 }
+
+@media screen and (max-width: 1180px) {
+    
+    /* ------------HEADER----------- */
+
+    .interface {
+       justify-content: space-between;
+       padding: 10px;
+   }
+
+   #item-navbar {
+       font-size: 22px;
+   }
+
+   /* -----------CARROSSEL----------- */
+
+   .txt-topo-site h1 {
+       font-size: 40px;
+   }
+
+   .topo-do-site .txt-topo-site p {
+       color: white;
+       margin: 30px 0;
+       font-size: 19px;
+       width: 300px;
+       text-align: start;
+   }
+
+   .carrosel {
+       height: 300px;
+       width: 400px;
+   }
+
+   /* -----------PERFIL------------ */
+
+   .container-perfil{
+    width: 750px;
+   }
+
+   .text-header p{
+    font-size: 24px;
+    }
+
+    #conta-criada{
+        font-size: 17px;
+    }
+
+    .botoes #botao-sair{
+        width: 300px;  
+        margin-left: 25px;
+    }
+
+    .botoes #botao-deletar{
+        width: 300px;  
+        margin-left: 25px;
+    }
+}

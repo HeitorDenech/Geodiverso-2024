@@ -11,23 +11,23 @@
         scroll-behavior: smooth;
     }
 
-      /* width */
-      ::-webkit-scrollbar {
+    /* width */
+    ::-webkit-scrollbar {
         width: 10px;
-        }
-        
-        /* Track */
-        ::-webkit-scrollbar-track {
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
         background: black;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: gray;
-            }
-        
-        ::-webkit-scrollbar-thumb:hover {
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: gray;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
         background: #e21a41;
-        }
+    }
 
     header {
         height: 200px;
@@ -81,29 +81,29 @@
         text-decoration: none;
         box-shadow: none;
     }
-    
+
 
     header nav ul li {
         display: inline-block;
         padding: 0 20px;
     }
 
-    .icon-navbar a{
+    .icon-navbar a {
         font-size: 50px;
         color: white;
         transition: all .55s ease;
     }
 
-    .nav-itens #icon-person{
+    .nav-itens #icon-person {
         color: white;
         font-size: 30px;
         transition: all .55s ease-in-out;
     }
 
-    .nav-itens #icon-person:hover{
+    .nav-itens #icon-person:hover {
         color: #E21A41;
     }
-    
+
     /* ---------------------main----------------------- */
 
 
@@ -178,12 +178,13 @@
         position: relative;
         animation: efeito-flutuante 2.5s ease-in-out infinite alternate;
     }
- 
-    @keyframes efeito-flutuante{
-        0%{
+
+    @keyframes efeito-flutuante {
+        0% {
             top: 0;
         }
-        100%{
+
+        100% {
             top: -30px;
         }
     }
@@ -255,18 +256,19 @@
     #radio2:checked~.navegacao-botao .botao-2 {
         background-color: white;
     }
-    
+
     #radio3:checked~.navegacao-botao .botao-3 {
-    background-color: white;
+        background-color: white;
     }
 
     #radio4:checked~.navegacao-botao .botao-4 {
         background-color: white;
     }
-/* 
+
+    /* 
     ----------------mapas----------------------- */
 
-    .mapas{
+    .mapas {
         margin-top: 50px;
         display: flex;
         align-items: center;
@@ -274,7 +276,7 @@
         background: transparent;
     }
 
-    .container-mapas-principal{
+    .container-mapas-principal {
         padding: 20px;
         gap: 20px;
         width: 951px;
@@ -286,7 +288,7 @@
         flex-wrap: wrap;
     }
 
-    .mapas-container{
+    .mapas-container {
         width: 250px;
         height: 250px;
         border: 1px solid black;
@@ -295,17 +297,17 @@
         overflow: hidden;
     }
 
-    .mapas-container img{
+    .mapas-container img {
         width: 100%;
         height: 150px;
         transition: all .55s ease;
     }
 
-    .mapas-container img:hover{
+    .mapas-container img:hover {
         transform: scaleX(1.05);
     }
 
-    .title-mapas{
+    .title-mapas {
         width: 100%;
         height: 60px;
         background-color: black;
@@ -313,12 +315,12 @@
         font-size: 22px;
     }
 
-    .title-mapas p{
+    .title-mapas p {
         text-align: center;
         margin-top: 15px;
     }
 
-    .botao-mapas button{
+    .botao-mapas button {
         width: 90%;
         height: 40px;
         background: transparent;
@@ -327,30 +329,30 @@
         transition: all .55s ease;
     }
 
-    .botao-mapas button:hover{
+    .botao-mapas button:hover {
         cursor: pointer;
     }
 
-    .botao-mapas a{
+    .botao-mapas a {
         color: #E21A41;
         text-decoration: none;
     }
 
-    .botao-mapas i{
+    .botao-mapas i {
         height: 40px;
         width: 10%;
         font-size: 20px;
         transition: all .55s ease;
         color: black;
     }
-    
-    .botao-mapas i:hover{
+
+    .botao-mapas i:hover {
         cursor: pointer;
-    } 
+    }
 
     /* ------------container-curiosidades-------------- */
 
-    .container-curiosidades{
+    .container-curiosidades {
         margin-top: 40px;
         background-color: #161618;
         height: 400px;
@@ -358,26 +360,26 @@
         align-items: center;
     }
 
-    .container-curiosidades img{
+    .container-curiosidades img {
         height: 100%;
         width: 50%;
     }
 
-    .mapas-curiosidade{
+    .mapas-curiosidade {
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 20px;
-        width: 500px;   
+        width: 500px;
         margin-left: 55px;
     }
 
-    .mapas-curiosidade h1{
+    .mapas-curiosidade h1 {
         font-size: 42px;
         color: white;
     }
 
-    .mapas-curiosidade p{
+    .mapas-curiosidade p {
         font-size: 22px;
         color: white;
         letter-spacing: 0.75px;
@@ -455,7 +457,7 @@
     }
 
     /* ------------------footer------------------ */
-    .footer-container-1 {  
+    .footer-container-1 {
         height: 254px;
         width: 100%;
         background-color: #131111;
@@ -558,4 +560,53 @@
         background-color: white;
         color: black;
     }
-}   
+}
+
+@media screen and (max-width: 1180px) {
+
+    /* ------------HEADER----------- */
+
+    .interface {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #item-navbar {
+        font-size: 22px;
+    }
+
+    /* -----------CARROSSEL----------- */
+
+    .txt-topo-site h1 {
+        font-size: 40px;
+    }
+
+    .topo-do-site .txt-topo-site p {
+        color: white;
+        margin: 30px 0;
+        font-size: 19px;
+        width: 300px;
+        text-align: start;
+    }
+
+    .carrosel {
+        height: 300px;
+        width: 400px;
+    }
+
+    /* -------------MAPAS------------ */
+
+    .container-mapas-principal {
+        width: 700px;
+    }
+
+    /* --------------CONTAINER-CURIOSIDADES------------- */
+
+    .mapas-curiosidade h1{
+        font-size: 35px;
+    }
+
+    .mapas-curiosidade p{
+        font-size: 20px;
+    }
+}

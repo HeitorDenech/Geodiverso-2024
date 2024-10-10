@@ -442,3 +442,52 @@
     }
 
 }   
+
+@media screen and (max-width: 1180px) {
+    
+     /* ------------HEADER----------- */
+
+     .interface {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #item-navbar {
+        font-size: 22px;
+    }
+
+    /* -----------CARROSSEL----------- */
+
+    .txt-topo-site h1 {
+        font-size: 40px;
+    }
+
+    .topo-do-site .txt-topo-site p {
+        color: white;
+        margin: 30px 0;
+        font-size: 19px;
+        width: 300px;
+        text-align: start;
+    }
+
+    .carrosel {
+        height: 300px;
+        width: 400px;
+    }
+
+    /* -------------JOGOS------------ */
+
+    .container-jogos-principal{
+        width: 751px;
+    }
+
+    .container-jogos h1{
+        font-size: 35px;
+    }
+
+    .container-jogos p{
+        font-size: 20px;
+        width: 500px;
+    }
+
+}
