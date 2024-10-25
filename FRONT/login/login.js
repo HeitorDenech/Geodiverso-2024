@@ -63,5 +63,5 @@ async function handleSubmit(event) {
             text: "Ocorreu um erro ao fazer login.",
             icon: "error",
         });
-    }
+    } 
 }
